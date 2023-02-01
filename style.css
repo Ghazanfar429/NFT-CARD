@@ -1,0 +1,140 @@
+/* ----General-section---- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 34rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1.6rem;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 100px 20px black;
+}
+
+/* ---- Image-Section---- */
+
+.image-container {
+  position: relative;
+}
+
+.img {
+  width: 30rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00fff7;
+  opacity: 0;
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container:hover .overlay {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* ---- Itext-Section---- */
+
+.heading {
+  font-family: "Outfit";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.heading:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+.notice {
+  font-family: "Outfit";
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 2rem;
+}
+
+.time-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  border-bottom: solid 2px hsl(215, 32%, 27%);
+}
+
+.value {
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.value p {
+  margin-left: 1rem;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+.time p {
+  margin-left: 1rem;
+}
+
+/* Comment-Section */
+
+.end-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.owner {
+  width: 3.5rem;
+  border: solid 2px hsl(0, 0%, 100%);
+  border-radius: 10rem;
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+}
+
+.creater-name:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
